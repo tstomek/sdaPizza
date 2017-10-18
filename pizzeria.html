@@ -1,0 +1,194 @@
+<html>
+<head>
+    <title>cwiczenie</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+   <link rel="stylesheet" href="styles/site.css">
+    <!-- <script  type="text/javascript" src="scripts/bootstrap-exercise.js"></script> -->
+</head>
+<body> 
+  <!-- Menu na górze -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Menu</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Style</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" id="type-2" href="#">Wegetariańska</a>
+      <a class="dropdown-item" id="type-3" href="#">Wegańska</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" id="type-1" href="#">Tradycyjne</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Koszyk 
+      <!--Na razie pusty badge  -->
+       <span class="badge badge-success badge-pill"></span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#">Zamówienie</a>
+  </li>
+</ul>
+<div class="alert alert-success">Udało się</div>
+<!-- Zmieniające się obrazy -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="images/img1.JPG" alt="Just pizza image">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="images/img2.JPG" alt="Just second pizza image">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="images/img3.jpg" alt="Just second delicious pizza image">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- Zestaw Tradycyjny ma id 1 -->
+<div class="row" id="menu-1">
+  <div class="card">
+    <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Margerita</h4>
+      <p class="card-text">Sos, mozzarela, bazylia</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Capricosa</h4>
+      <p class="card-text">Sos, szynka, pieczarki</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+    <div class="card">
+    <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Diavolo</h4>
+      <p class="card-text">Sos, salami, jalapeno</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+</div>
+<!-- Zestaw wegetariański ma id 2 -->
+<div class="row" id="menu-2">
+  <div class="card">
+    <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Margerita</h4>
+      <p class="card-text">Sos, mozzarela, bazylia</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Capricosa</h4>
+      <p class="card-text">Sos, szynka, pieczarki</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+    <div class="card">
+    <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Brokułowa</h4>
+      <p class="card-text">Sos, brokuły, jalapeno</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+</div>
+<!-- Zestaw wegański ma id 3 -->
+<div class="row" id="menu-3">
+  <div class="card">
+    <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Wege 1</h4>
+      <p class="card-text">Sos, mozzarela, bazylia</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Wege2</h4>
+      <p class="card-text">Sos, szynka, pieczarki</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+    <div class="card">
+    <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Wege3</h4>
+      <p class="card-text">Sos, salami, jalapeno</p>
+      <a href="#" class="btn btn-primary col-md-10">Do koszyka</a>
+    </div>
+  </div>
+</div>
+
+ <!-- Modal  -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+          <input type="hidden" value="">
+            <div class="input-group">
+              <span class="input-group-addon">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+              </span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox" value="Sos pomidorowy" disabled>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+              </span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox" value="Sos czosnkowy" disabled>
+            </div>
+          
+            <div class="input-group">
+              <span class="input-group-addon">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+              </span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox" value="Podwójny ser" disabled>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+              </span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox" value="Razowe ciasto" disabled>
+            </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+        <button type="button" id="submit" class="btn btn-success">Dodaj do koszyk</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script  type="text/javascript" src="scripts/jquery-3.1.1.slim.min.js"></script>
+    <script  type="text/javascript" src="scripts/tether.min.js"></script>
+    <script  type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script  type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
