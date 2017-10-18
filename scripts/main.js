@@ -8,8 +8,10 @@ $(document).ready(function(){
     //funkcja wyświetlająca modal
     $('.btn-primary').click(function(){
         var pizzaId = this.id.split("-")[1]; //uzyskanie id pizzy z atrybutu id w buttonie
-        $('input[type="hidden"').val(pizzaId); //id przydatne do ajaxa później
+        $('input[type="hidden"]').val(pizzaId); //id przydatne do ajaxa później
         $('#myModal').modal('show'); //wyświetl modal
+        var contentCardTitle = $(this).parent().find('.card-title').text();
+        $('#exampleModalLabel').text(contentCardTitle);
     });
 
     //funkcja po naciśnięciu guzika w modalu
@@ -21,6 +23,26 @@ $(document).ready(function(){
         } else {
             $('.badge').text('1');   //pierwsze zamówienie? nadaj 1
             $('.badge').show();
+            var ingredients = '';
+            var newOrder = document.createElement('li');
+            newOrder.className = 'list-group-item row';
+            var pizzaName = document.createElement('div');
+            pizzaName.className = 'col';
+            newOrder.textContent = $('#exampleModalLabel').text();
+            newOrder.appendChild(pizzaName);
+            $('.ingredient:checked').each(function(i, element){
+                ingredients += $(element).parent().parent().find('.form-control').val();
+                ingredients += ', ';
+            });
+            console.log(ingredients);
+            if (ingredients != '') {
+                var ingredientsDiv = document.createElement('div');
+                ingredientsDiv.className = 'col';
+                ingredientsDiv.textContent = ingredients;
+                newOrder.appendChild(ingredientsDiv);
+            }
+            $('#basket ul').append(newOrder);
+
         }
         $('#myModal').modal('hide'); //schowaj modal
         $('.alert').show(); //wyświetl alert
@@ -35,4 +57,6 @@ $(document).ready(function(){
         $('#menu-' + itemId).show(); //wyświetlenie nowego stylu
 
     })
-})
+});
+
+
